@@ -16,9 +16,13 @@ const StatBox = ({
                 <img src={socialIcon} alt="social media icon" />
             </div>
             <div>
-                <span>{number}</span>
-                <img src={arrow} alt="arrow icon" />
-                <span>{difference}%</span>
+                <div>
+                    <span>{number}</span>
+                </div>
+                <div>
+                    <img src={arrow} alt="arrow icon" />
+                    <span>{difference}%</span>
+                </div>
             </div>
         </StyledStatBox>
     );

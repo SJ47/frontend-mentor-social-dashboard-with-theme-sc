@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
         min-width: var(--layout-mobile);
         margin: 0 auto;
         font-family: var(--ff-primary);
-        border: 1px solid grey;
+        /* border: 1px solid grey; */
         width: 376px;
         padding-top: 0;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledStatBox = styled.div`
     background: var(--color-lt-light-grayish-blue-card-bg);
-    padding: 1em 0;
+    padding: 0 0 1em 0;
     margin: .5em 0;
     border-radius: var(--radius-corner-small);
     text-align: center;
@@ -10,7 +10,7 @@ export const StyledStatBox = styled.div`
     div:nth-child(1) {
         display: flex;
         justify-content: space-between;
-        margin: 0 1.5em;
+        margin: 0 1em;
         font-weight: var(--fw-bold);
 
         img {
@@ -25,25 +25,23 @@ export const StyledStatBox = styled.div`
     div:nth-child(2) {
         display: flex;
         justify-content: space-between;
-        margin: 0 1.5em;
+        margin: 0 .3em;
         padding-top: .5em;
 
         img {
             align-self: center;
             position: relative;
-            right: -6.9em;
-            top: -.4em;
+            right: .2em;
+            top: -.1em;
         }
 
-        span:first-of-type {
+        > div > span {
             font-size: 1.8rem;
         }
 
-        span:last-of-type {
-        color: ${props => (props.numbersDown ? "red" : "var(--color-lime-green)")};
-        font-weight: var(--fw-bold);
+        > span:last-of-type {
+            color: ${props => (props.numbersDown ? "red" : "var(--color-lime-green)")};
+            font-size: 1em;
+        }
     }
-        
-    }
-
 `;

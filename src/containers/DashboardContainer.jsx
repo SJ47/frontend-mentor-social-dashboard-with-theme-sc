@@ -48,7 +48,6 @@ const DashboardContainer = () => {
     const [theme, setTheme] = useState(lightTheme);
 
     const handleThemeSwitch = () => {
-        console.log("THEME SWITCHED");
         setTheme(theme === lightTheme ? darkTheme : lightTheme);
     };
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledDashboardContainer = styled.div`
     /* background: orange; */
+    background: ${(props) => props.theme.colors.bg};
     /* height: 100vh; */
     width: 250px;
     

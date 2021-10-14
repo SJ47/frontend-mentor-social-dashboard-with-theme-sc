@@ -22,6 +22,11 @@ import Switch from "../components/Switch";
 const lightTheme = {
     colors: {
         bg: "var(--color-lt-white-bg)",
+        topBg: "var(--color-lt-very-pale-blue-top-bg-pattern)",
+        cardBg: "var(--color-lt-light-grayish-blue-card-bg)",
+        lightFg: "var(--color-lt-dark-grayish-blue-text)",
+        darkFg: "var(--color-lt-very-dark-blue-text)",
+        headerAndNumberText: "var(--color-lt-very-dark-blue-text)",
     },
     mobile: "768px",
 };
@@ -29,6 +34,11 @@ const lightTheme = {
 const darkTheme = {
     colors: {
         bg: "var(--color-dt-very-dark-blue-bg)",
+        topBg: "var(--color-dt-very-dark-blue-top-bg-pattern)",
+        cardBg: "var(--color-dt-dark-desaturated-blue-card-bg)",
+        lightFg: "var(--color-dt-white-text)",
+        darkFg: "var(--color-dt-desaturated-blue-text)",
+        headerAndNumberText: "var(--color-dt-white-text)",
     },
     mobile: "768px",
 };

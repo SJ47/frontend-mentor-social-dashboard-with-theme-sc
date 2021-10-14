@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledStatBox = styled.div`
-    background: var(--color-lt-light-grayish-blue-card-bg);
+    /* background: var(--color-lt-light-grayish-blue-card-bg); */
+    background: ${(props) => props.theme.colors.cardBg};
     padding: 0 0 1em 0;
     margin: .5em 0;
     border-radius: var(--radius-corner-small);
@@ -18,6 +19,7 @@ export const StyledStatBox = styled.div`
         }
 
         p {
+            color: ${(props) => props.theme.colors.darkFg};
             opacity: 0.55;
         }
     }
@@ -36,6 +38,7 @@ export const StyledStatBox = styled.div`
         }
 
         > div > span {
+            color: ${(props) => props.theme.colors.headerAndNumberText};
             font-size: 1.8rem;
         }
 

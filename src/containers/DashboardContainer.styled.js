@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const StyledDashboardContainer = styled.div`
     /* background: orange; */
     background: ${(props) => props.theme.colors.bg};
+    /* color: orange; */
     /* height: 100vh; */
-    width: 250px;
+    width: 300px;
+    padding: 1em;
     
     // Grid setup
     display: grid;
@@ -20,20 +22,27 @@ export const StyledDashboardContainer = styled.div`
     margin: 1em;
 
     hr {
+        background: ${(props) => props.theme.colors.darkFg};
+        opacity: .2;
+        border: none;
+        height: .01em;
         margin-bottom: 0;
         margin-top: 1em;
     }
 
     header {
         grid-area: header;
-
         > h3 {
+            color: ${(props) => props.theme.colors.headerAndNumberText};
+            
             margin-bottom: 0;
             padding-bottom: 0;
             letter-spacing: .04em;
+            /* opacity: 1; */
         }
 
         p {
+            color: ${(props) => props.theme.colors.darkFg};
             margin-top: 0.2em;
             font-size: 12px;
             opacity: .6;
@@ -42,8 +51,9 @@ export const StyledDashboardContainer = styled.div`
     }
 
     > h3 {  // Overview - today header
+        color: ${(props) => props.theme.colors.headerAndNumberText};
         grid-area: overview-header;
-        opacity: 0.5;
+        opacity: ${(props) => props.theme.colors.headerAndNumberText === "var(--color-lt-very-dark-blue-text)" && ".7"};
         padding-top: .5em
     }
 
@@ -55,6 +65,7 @@ export const StyledModeSwitchContainer = styled.div`
     justify-content: space-between;
 
     > p {
+        color: ${(props) => props.theme.colors.darkFg};
         font-size: 12px;
         opacity: .6;
         font-weight: var(--fw-bold);

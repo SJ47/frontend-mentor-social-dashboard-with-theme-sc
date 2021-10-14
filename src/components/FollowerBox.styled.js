@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledFollowerBox = styled.div`
     /* grid-area:follower-box; */
-    background: var(--color-lt-light-grayish-blue-card-bg);
+    background: ${(props) => props.theme.colors.cardBg};
     padding: 1em 0;
     margin: .5em 0;
     border-radius: var(--radius-corner-small);
@@ -23,6 +23,7 @@ export const StyledFollowerBox = styled.div`
     }
 
     h1 {
+        color: ${(props) => props.theme.colors.headerAndNumberText};
         margin-top: 1rem;
         margin-bottom: 0;
         font-size: 42px;
@@ -30,6 +31,7 @@ export const StyledFollowerBox = styled.div`
 
     div > p {
         font-size: 10px;
+        color: ${(props) => props.theme.colors.darkFg};
     }
 
     div:last-of-type > p {
@@ -38,6 +40,7 @@ export const StyledFollowerBox = styled.div`
     }
 
     > p {
+        color: ${(props) => props.theme.colors.darkFg};
         opacity: .5;
         margin-top: 0;
         margin-bottom: -1em;

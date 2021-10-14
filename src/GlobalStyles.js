@@ -52,6 +52,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
+        background: #2b2a33;
         @media (min-width: 776px) {
             /* display: flex;
             justify-content: center;
@@ -68,7 +69,6 @@ const GlobalStyles = createGlobalStyle`
         /* border: 1px solid grey; */
         width: 376px;
         padding-top: 0;
-
         @media (min-width: 776px) {
             background: orange;
             width: 900px;

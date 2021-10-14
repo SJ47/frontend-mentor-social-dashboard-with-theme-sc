@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSwitch = styled.div`
-    /* background: orange; */
     /* The switch - the box around the slider */
     .switch {
         position: relative;
@@ -36,7 +35,7 @@ const StyledSwitch = styled.div`
         content: "";
         height: 16px;
         width: 16px;
-        left: 3px;
+        left: 20px;
         bottom: 2.5px;
         background-color: white;
         -webkit-transition: 0.4s;
@@ -44,7 +43,11 @@ const StyledSwitch = styled.div`
     }
 
     input:checked + .slider {
-        background-color: #2196f3;
+        background: linear-gradient(
+            to right,
+            hsl(210, 78%, 56%),
+            hsl(146, 68%, 55%)
+        );
     }
 
     input:focus + .slider {
@@ -52,9 +55,13 @@ const StyledSwitch = styled.div`
     }
 
     input:checked + .slider:before {
-        -webkit-transform: translateX(18px);
-        -ms-transform: translateX(18px);
-        transform: translateX(18px);
+        -webkit-transform: translateX(-17px);
+        -ms-transform: translateX(-17px);
+        transform: translateX(-17px);
+    }
+
+    input:checked + .slider:before {
+        background-color: var(--color-dt-very-dark-blue-bg);
     }
 
     /* Rounded sliders */

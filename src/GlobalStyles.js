@@ -26,8 +26,7 @@ const GlobalStyles = createGlobalStyle`
         --color-twitter: hsl(203, 89%, 53%);
         --color-instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))1;
         --color-youtube: hsl(348, 97%, 39%);
-
-        --color-toggle-dark-theme: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+        --color-toggle-dark-theme: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))1;
         --color-toggle-light-theme: hsl(230, 22%, 74%);
 
         // Dark theme

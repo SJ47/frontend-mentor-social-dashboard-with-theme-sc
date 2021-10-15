@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import FollowerBox from "../components/FollowerBox";
-import { StyledFollowerBox } from "../components/FollowerBox.styled";
 import {
     StyledDashboardContainer,
     StyledModeSwitchContainer,
@@ -15,7 +14,6 @@ import instagramIcon from "../assets/images/icon-instagram.svg";
 import youtubeIcon from "../assets/images/icon-youtube.svg";
 import upIcon from "../assets/images/icon-up.svg";
 import downIcon from "../assets/images/icon-down.svg";
-import { StyledStatBox } from "../components/StatBox.styled";
 import StatBox from "../components/StatBox";
 import Switch from "../components/Switch";
 
@@ -61,7 +59,6 @@ const DashboardContainer = () => {
                 </header>
                 <StyledModeSwitchContainer>
                     <p>Dark Mode</p>
-                    {/* <p>O-O</p> */}
                     <Switch handleThemeSwitch={handleThemeSwitch} />
                 </StyledModeSwitchContainer>
                 <StyledFollowerContainer>

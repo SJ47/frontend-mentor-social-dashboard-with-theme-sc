@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const StyledDashboardContainer = styled.div`
-    /* background: orange; */
     background: ${(props) => props.theme.colors.bg};
-    /* color: orange; */
-    /* height: 100vh; */
     width: 300px;
-    padding: 1em;
+    padding: .5em 1em 2em 1em;
     
     // Grid setup
     display: grid;
@@ -38,7 +35,6 @@ export const StyledDashboardContainer = styled.div`
             margin-bottom: 0;
             padding-bottom: 0;
             letter-spacing: .04em;
-            /* opacity: 1; */
         }
 
         p {
@@ -54,7 +50,9 @@ export const StyledDashboardContainer = styled.div`
         color: ${(props) => props.theme.colors.headerAndNumberText};
         grid-area: overview-header;
         opacity: ${(props) => props.theme.colors.headerAndNumberText === "var(--color-lt-very-dark-blue-text)" && ".7"};
-        padding-top: .5em
+        padding-top: .5em;
+        margin-bottom: .7em;
+        font-size: 1.1em;
     }
 
 `;
@@ -63,6 +61,7 @@ export const StyledModeSwitchContainer = styled.div`
     grid-area: theme-switch;
     display: flex;
     justify-content: space-between;
+    margin: .3em 0 .5em 0;
 
     > p {
         color: ${(props) => props.theme.colors.darkFg};
@@ -85,6 +84,4 @@ export const StyledStatContainer = styled.div`
     grid-area: stat-box;
     display: flex;
     flex-direction: column;
-    /* gap: 0.25rem; */
-    /* padding-top: 0; */
 `;

@@ -21,7 +21,7 @@ const FollowerBox = ({
                 <img src={socialIcon} alt="social media icon" />
                 <p>{name}</p>
             </div>
-            <h1>{number}</h1>
+            <h2>{number}</h2>
             <p>{text}</p>
             <br />
             <div>

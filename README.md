@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f78fb1c5-df86-45d4-8418-b8de9479f2fa/deploy-status)](https://app.netlify.com/sites/musing-ritchie-02aee3/deploys)
+
 # Frontend Mentor - Social media dashboard with theme switcher solution
 
 This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -31,7 +33,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Frontend Mentor](https://your-solution-url.com)
+-   Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/dashboard-with-theme-switcher-using-react-styled-comp-js-htmlcss-VG_S4WGGB)
 -   Live Site URL: [Dashboard and Theme Switcher](https://dashboard-theme-switcher.scottjohnston.dev)
 
 ## My process

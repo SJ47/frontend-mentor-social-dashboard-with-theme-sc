@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSwitch = styled.div`
+
     /* The switch - the box around the slider */
     .switch {
         position: relative;

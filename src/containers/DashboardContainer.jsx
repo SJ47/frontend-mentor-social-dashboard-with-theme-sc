@@ -25,6 +25,7 @@ const lightTheme = {
         lightFg: "var(--color-lt-dark-grayish-blue-text)",
         darkFg: "var(--color-lt-very-dark-blue-text)",
         headerAndNumberText: "var(--color-lt-very-dark-blue-text)",
+        cardBgHover: "#b3bad580",
     },
     mobile: "768px",
 };
@@ -37,6 +38,7 @@ const darkTheme = {
         lightFg: "var(--color-dt-white-text)",
         darkFg: "var(--color-dt-desaturated-blue-text)",
         headerAndNumberText: "var(--color-dt-white-text)",
+        cardBgHover: "#444967c9",
     },
     mobile: "768px",
 };

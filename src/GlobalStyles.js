@@ -68,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
         width: 376px;
         padding-top: 0;
         @media (min-width: 776px) {
-            background: orange;
+            /* background: orange; */
             width: 900px;
             max-width: 1440px;
         }
@@ -76,3 +76,4 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default GlobalStyles;
+

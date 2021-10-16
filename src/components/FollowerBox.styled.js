@@ -8,6 +8,16 @@ export const StyledFollowerBox = styled.div`
     text-align: center;
     border-top: 3px solid ${props => (props.socialColor === "var(--color-instagram)" ? "transparent" : props.socialColor)};
     border-image: ${props => (props.socialColor === "var(--color-instagram)" && props.socialColor)};
+    cursor: pointer;
+
+    @media(min-width: 776px) {
+        width:100%;
+    }
+
+
+    &:hover {
+        background: ${(props) => props.theme.colors.cardBgHover};
+    }
 
     div {
         display: flex;

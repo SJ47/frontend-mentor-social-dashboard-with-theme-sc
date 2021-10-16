@@ -6,6 +6,16 @@ export const StyledStatBox = styled.div`
     margin: .4em 0;
     border-radius: var(--radius-corner-small);
     text-align: center;
+    cursor: pointer;
+
+    @media(min-width: 776px) {
+        width:100%;
+        /* height: 100%; */
+    }
+
+    &:hover {
+        background: ${(props) => props.theme.colors.cardBgHover};
+    }
 
     > div:first-of-type {
         display: flex;

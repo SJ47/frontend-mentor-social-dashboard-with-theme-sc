@@ -10,13 +10,21 @@ export const StyledDashboardContainer = styled.div`
     grid-template-columns: 1fr;
     grid-template-areas:
         "header"
-        "subheader"
         "theme-switch"
         "follower-box"
         "overview-header"
         "stat-box";
-    
     margin: 1em;
+
+    @media(min-width: 776px) {
+        width: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header theme-switch"
+            "follower-box follower-box"
+            "overview-header ."
+            "stat-box stat-box";
+        }
 
     hr {
         background: ${(props) => props.theme.colors.darkFg};
@@ -25,6 +33,10 @@ export const StyledDashboardContainer = styled.div`
         height: .01em;
         margin-bottom: 0;
         margin-top: 1em;
+
+        @media(min-width: 776px) {
+           display: none;
+        }
     }
 
     header {
@@ -70,6 +82,11 @@ export const StyledModeSwitchContainer = styled.div`
         font-weight: var(--fw-bold);
     }
 
+    @media(min-width: 776px) {
+        justify-content: flex-end;
+        gap: .75em;
+        margin-top: 1em;
+    }
 `;
 
 export const StyledFollowerContainer = styled.div`
@@ -78,10 +95,22 @@ export const StyledFollowerContainer = styled.div`
     flex-direction: column;
     gap: 0.25rem;
     
+    @media(min-width: 776px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1.25em;
+        padding-top: .75em;
+    }
 `;
 
 export const StyledStatContainer = styled.div`
     grid-area: stat-box;
     display: flex;
     flex-direction: column;
+
+    @media(min-width: 776px) {
+        gap: 1.25em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 `;

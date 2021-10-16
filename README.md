@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-More exposure to styled components in React. Additional learning using Grid. Implementing a theme switch component.
+More exposure to styled components in React along with additional learning using Grid. Implementing a theme switch component.
 
 ### Continued development
 
